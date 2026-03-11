@@ -70,7 +70,7 @@ export const config = {
             period: "Jun 2025 - Jul 2025",
             location: "Remote",
             description:
-                "Worked on predictive analytics and forecasting projects using machine learning techniques to derive insights from datasets.",
+                "Worked on predictive analytics and forecasting projects using machine learning techniques to derive insights from real-world datasets. Built automated data preprocessing pipelines improving efficiency by ~30%, processed 5,000+ records, and optimized model performance through feature engineering, feature selection, and hyperparameter tuning.",
             responsibilities: [
                 "Improved data preprocessing efficiency by ~30% using automated data cleaning and transformation pipelines.",
                 "Processed and analyzed 5,000+ structured data records handling missing values and outliers.",
@@ -85,7 +85,7 @@ export const config = {
             period: "2024 - 2025",
             location: "Online",
             description:
-                "Continuous learning through professional certifications and competitive programming.",
+                "Earned certifications in Cloud Computing (NPTEL), Python Django Development (CipherSchool), and Data Structures & Algorithms using C++ (CipherSchool), demonstrating continuous learning and skill development in software and data technologies.",
             responsibilities: [
                 "Cloud Computing Certification — September 2025",
                 "Python Django Development Certification — CipherSchool — June 2025",
@@ -109,7 +109,8 @@ export const config = {
             technologies: "Python, PyAutoGUI, OpenCV, Automation Scripting",
             image: "/images/wifi_automation.png",
             description:
-                "Developed a Python automation script that automatically logs in to LPU WiFi using computer vision to detect input fields and login buttons. Reduced login time by ~40% and eliminated repetitive manual authentication."
+                "Developed a Python automation script that automatically logs in to LPU WiFi using computer vision to detect input fields and login buttons. Reduced login time by ~40% and eliminated repetitive manual authentication.",
+            link: "https://github.com/chandan91077/lpu-wifi-auto-login"
         },
 
         {
@@ -119,7 +120,8 @@ export const config = {
             technologies: "Python, Django, SQLite3, HTML, CSS, Bootstrap",
             image: "/images/medical_store.png",
             description:
-                "Built a full-stack medical store platform enabling medicine catalog management, secure customer ordering, and role-based admin operations using Django backend and responsive frontend design."
+                "Built a full-stack medical store platform enabling medicine catalog management, secure customer ordering, and role-based admin operations using Django backend and responsive frontend design.",
+            link: "https://github.com/Roshan192004/ecommerce"
         },
 
         {
@@ -129,7 +131,8 @@ export const config = {
             technologies: "Python, Streamlit, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn",
             image: "/images/depression_detection.png",
             description:
-                "Developed an end-to-end machine learning application using Random Forest classifier to predict depression likelihood with an interactive Streamlit interface and detailed model evaluation metrics."
+                "Developed an end-to-end machine learning application using Random Forest classifier to predict depression likelihood with an interactive Streamlit interface and detailed model evaluation metrics.",
+            link: "https://github.com/Roshan192004/AI-Predictor"
         }
     ],
 

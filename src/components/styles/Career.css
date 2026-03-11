@@ -54,9 +54,13 @@
 
 .career-info-in {
   display: flex;
-  width: 40%;
-  justify-content: space-between;
-  gap: 50px;
+  width: 45%;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.career-role {
+  flex: 1;
 }
 
 .career-info h3 {
@@ -64,6 +68,9 @@
   margin: 0;
   font-weight: 500;
   line-height: 45px;
+  min-width: 140px;
+  text-align: right;
+  flex-shrink: 0;
 }
 
 .career-info h4 {
@@ -161,6 +168,7 @@
 
   .career-info h3 {
     font-size: 40px;
+    min-width: 110px;
   }
 
   .career-info-box p {
