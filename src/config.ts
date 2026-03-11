@@ -3,109 +3,136 @@ export const config = {
         name: "Roshan",
         fullName: "Roshan Pal",
         title: "Software Engineer & Data Scientist",
-        description: "Enthusiastic developer with a strong foundation in C++, Python, and full-stack development. Experienced in building machine learning models, web applications, and automation scripts. Passionate about problem-solving and leveraging data to drive insights."
+        description:
+            "Enthusiastic developer with strong foundations in C++, Java, Python, and full-stack development. Experienced in building machine learning models, automation tools, and web applications. Passionate about solving real-world problems using data and scalable software solutions."
     },
+
     social: {
         github: "Roshan192004",
         email: "palroshan61@gmail.com",
         location: "Punjab, India"
     },
+
     about: {
         title: "About Me",
-        description: "I am a B.Tech Computer Science and Engineering student at Lovely Professional University. My skills range from full-stack web development with Django to data science and machine learning. I enjoy automating tasks, building end-to-end web platforms, and solving complex algorithmic challenges. I have solved 150+ problems on LeetCode and continuously strive to enhance my technical acumen."
+        description:
+            "I am a B.Tech Computer Science and Engineering student at Lovely Professional University. My interests include Data Science, Machine Learning, and Full-Stack Development. I enjoy building automation tools, developing end-to-end web applications using Django, and solving complex algorithmic challenges. I have solved 150+ problems on LeetCode and continuously work on improving my technical and analytical skills."
     },
+
     experiences: [
+
+        {
+            position: "Bachelor of Technology - Computer Science and Engineering",
+            company: "Lovely Professional University",
+            period: "Apr 2023 - Present",
+            location: "Punjab, India",
+            description:
+                "Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 7.28.",
+            responsibilities: [
+                "Studying core subjects including Data Structures, Algorithms, OOPS, and Web Development.",
+                "Building real-world projects involving Machine Learning and Full-Stack Development.",
+                "Practicing DSA regularly and solving problems on LeetCode."
+            ],
+            technologies: ["C++", "Java", "Python", "DSA", "OOPS", "SQL"]
+        },
+
+        {
+            position: "Intermediate (Higher Secondary)",
+            company: "Shri Sai Baba School",
+            period: "Apr 2020 - Mar 2021",
+            location: "Chhattisgarh, India",
+            description:
+                "Completed higher secondary education with 79.2% in the Science stream.",
+            responsibilities: [
+                "Focused on Mathematics and Science subjects.",
+                "Participated in academic competitions and school technical activities."
+            ],
+            technologies: ["Science", "Mathematics"]
+        },
+
+        {
+            position: "Matriculation (Secondary School)",
+            company: "Shri Sai Baba School",
+            period: "Apr 2018 - Mar 2019",
+            location: "Chhattisgarh, India",
+            description:
+                "Completed secondary education with 71%.",
+            responsibilities: [
+                "Developed strong fundamentals in mathematics and science.",
+                "Actively participated in extracurricular activities."
+            ],
+            technologies: ["General Academics"]
+        },
+
         {
             position: "Data Science Intern",
             company: "ZIDIO DEVELOPMENT",
             period: "Jun 2025 - Jul 2025",
             location: "Remote",
-            description: "Worked on predictive analytics and forecasting projects, applying machine learning techniques to derive actionable insights from real-world datasets.",
+            description:
+                "Worked on predictive analytics and forecasting projects using machine learning techniques to derive insights from datasets.",
             responsibilities: [
-                "Improved data preprocessing efficiency by ~30% with automated data cleaning and transformation pipelines.",
-                "Processed, cleaned, and analyzed 5,000+ structured data records, handling missing values, outliers, and inconsistencies.",
-                "Enhanced model accuracy by performing hyperparameter tuning, feature selection, and optimization of feature engineering steps."
+                "Improved data preprocessing efficiency by ~30% using automated data cleaning and transformation pipelines.",
+                "Processed and analyzed 5,000+ structured data records handling missing values and outliers.",
+                "Enhanced model accuracy through hyperparameter tuning, feature engineering, and model optimization."
             ],
             technologies: ["Python", "Machine Learning", "Predictive Analytics", "Data Preprocessing"]
         },
-        {
-            position: "B.Tech Computer Science and Engineering",
-            company: "Lovely Professional University",
-            period: "Apr 2023 - Present",
-            location: "Punjab, India",
-            description: "Pursuing Bachelor of Technology with a focus on core computer science subjects. Current CGPA: 7.28.",
-            responsibilities: [
-                "Studying Data Structures, Algorithms, OOPS, and Web Development.",
-                "Consistently maintaining a strong academic record while building real-world projects.",
-                "Engaged in university technical activities and peer-to-peer learning."
-            ],
-            technologies: ["C++", "Java", "Python", "DSA", "OOPS", "SQL"]
-        },
-        {
-            position: "Intermediate (Schooling)",
-            company: "Shri Sai Baba School",
-            period: "Apr 2020 - Mar 2021",
-            location: "Chhattisgarh, India",
-            description: "Completed higher secondary education with a percentage of 79.2%.",
-            responsibilities: [
-                "Focused on Science and Mathematics stream.",
-                "Participated in school level competitions and technical workshops."
-            ],
-            technologies: ["Science", "Mathematics", "Problem Solving"]
-        },
-        {
-            position: "Matriculation (Schooling)",
-            company: "Shri Sai Baba School",
-            period: "Apr 2018 - Mar 2019",
-            location: "Chhattisgarh, India",
-            description: "Completed secondary education with a percentage of 71%.",
-            responsibilities: [
-                "Strong foundation in core academic subjects.",
-                "Active participation in extracurricular activities."
-            ],
-            technologies: ["General Academics"]
-        },
+
         {
             position: "Certifications & Achievements",
             company: "Various Platforms",
             period: "2024 - 2025",
             location: "Online",
-            description: "Dedicated to continuous learning and skill strengthening through professional certifications and competitive programming.",
+            description:
+                "Continuous learning through professional certifications and competitive programming.",
             responsibilities: [
-                "Solved 150+ problems on LeetCode, strengthening skills in Data Structures and Algorithms.",
-                "Certified in Cloud Computing (Sep 2025).",
-                "Certified in Python Django Development by CipherSchool (Jun 2025).",
-                "Certified in Data Structures & Algorithms Using C++ (Aug 2024)."
+                "Cloud Computing Certification — September 2025",
+                "Python Django Development Certification — CipherSchool — June 2025",
+                "Data Structures & Algorithms Using C++ Certification — August 2024",
+                "Solved 150+ problems on LeetCode across arrays, trees, graphs, and dynamic programming."
             ],
-            technologies: ["LeetCode", "Cloud Computing", "Django", "DSA"]
+            technologies: [
+                "Cloud Computing",
+                "Python Django Development",
+                "Data Structures & Algorithms (C++)",
+                "LeetCode"
+            ]
         }
     ],
+
     projects: [
         {
             id: 1,
             title: "LPU WiFi Auto-Login Automation",
             category: "Automation / Scripting",
-            technologies: "Python, PyAutoGUI, OpenCV, Automation Scripting, UI Automation",
+            technologies: "Python, PyAutoGUI, OpenCV, Automation Scripting",
             image: "/images/wifi_automation.png",
-            description: "Developed a lightweight Python automation script to automatically log in to LPU WiFi using computer vision to detect UI elements. Reduced login time by ~40% and improved daily connectivity efficiency."
+            description:
+                "Developed a Python automation script that automatically logs in to LPU WiFi using computer vision to detect input fields and login buttons. Reduced login time by ~40% and eliminated repetitive manual authentication."
         },
+
         {
             id: 2,
             title: "Anvik Biotech – Online Medical Store",
             category: "Full Stack",
             technologies: "Python, Django, SQLite3, HTML, CSS, Bootstrap",
             image: "/images/medical_store.png",
-            description: "Enhanced a full-stack online medical store platform for medicine catalog management and secure customer ordering. Developed backend functionality using Django and managed structured data with SQLite3."
+            description:
+                "Built a full-stack medical store platform enabling medicine catalog management, secure customer ordering, and role-based admin operations using Django backend and responsive frontend design."
         },
+
         {
             id: 3,
             title: "Depression Detection System",
             category: "Machine Learning",
             technologies: "Python, Streamlit, Scikit-learn, Pandas, NumPy, Matplotlib, Seaborn",
             image: "/images/depression_detection.png",
-            description: "Developed an end-to-end ML application to predict depression likelihood using a Random Forest classifier. Integrated data visualization and model evaluation techniques in an interactive Streamlit interface."
+            description:
+                "Developed an end-to-end machine learning application using Random Forest classifier to predict depression likelihood with an interactive Streamlit interface and detailed model evaluation metrics."
         }
     ],
+
     contact: {
         email: "palroshan61@gmail.com",
         mobile: "+919301197281",
@@ -115,26 +142,60 @@ export const config = {
         facebook: "",
         instagram: ""
     },
+
     skills: {
+
         develop: {
-            title: "DATA SCIENCE & AI",
-            description: "Building models & analyzing data",
-            details: "Experienced in data preprocessing, exploratory data analysis, and developing machine learning models using libraries like Pandas, Scikit-learn, and Seaborn. Proficient in tools like Jupyter Notebooks and Power BI.",
-            tools: ["Python", "Pandas", "Matplot", "Seaborn", "Scikit-learn", "Jupyter Notebooks", "Google Colab", "Excel", "Power BI"]
+            title: "DATA SCIENCE & MACHINE LEARNING",
+            description: "Data analysis and ML model development",
+            details:
+                "Experienced in data preprocessing, exploratory data analysis, visualization, and developing machine learning models using Python libraries.",
+            tools: [
+                "Python",
+                "Pandas",
+                "Matplotlib",
+                "Seaborn",
+                "Scikit-learn",
+                "Jupyter Notebooks",
+                "Google Colab",
+                "Excel",
+                "Power BI"
+            ]
         },
+
         design: {
             title: "SOFTWARE DEVELOPMENT",
-            description: "Full-stack & algorithms",
-            details: "Proficient in object-oriented programming and data structures. Building web apps using Django, HTML, CSS, and Bootstrap, as well as developing automation scripts and managing SQL databases.",
-            tools: ["C++", "Java", "C", "SQL", "Javascript", "DSA", "OOPS", "HTML", "CSS", "MongoDB", "Django", "Git", "Figma"]
+            description: "Programming, full-stack development and algorithms",
+            details:
+                "Strong foundation in programming languages, object-oriented programming, and data structures with experience in developing web applications and automation scripts.",
+            tools: [
+                "C++",
+                "Java",
+                "C",
+                "SQL",
+                "Javascript",
+                "DSA",
+                "OOPS",
+                "HTML",
+                "CSS",
+                "MongoDB",
+                "Django",
+                "Git",
+                "Figma"
+            ]
         },
+
         softSkills: {
             title: "SOFT SKILLS",
             description: "Professional effectiveness",
-            details: "Strong problem-solving mindset, efficient time management, and a team-oriented approach with excellent communication skills.",
-            tools: ["Problem-Solving", "Time-Management", "Teamwork", "Communication"]
+            details:
+                "Strong analytical thinking, teamwork, communication, and time management abilities.",
+            tools: [
+                "Problem Solving",
+                "Time Management",
+                "Teamwork",
+                "Communication"
+            ]
         }
     }
 };
-
-
