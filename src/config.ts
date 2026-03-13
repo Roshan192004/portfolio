@@ -16,7 +16,7 @@ export const config = {
     about: {
         title: "About Me",
         description:
-            "I am a B.Tech Computer Science and Engineering student at Lovely Professional University. My interests include Data Science, Machine Learning, and Full-Stack Development. I enjoy building automation tools, developing end-to-end web applications using Django, and solving complex algorithmic challenges. I have solved 150+ problems on LeetCode and continuously work on improving my technical and analytical skills."
+            "I am a B.Tech Computer Science and Engineering student at Lovely Professional University. My interests include Data Science, Machine Learning, and Full-Stack Development. I enjoy building automation tools, developing end-to-end web applications using Django, and solving complex algorithmic challenges. I have solved 200+ problems on LeetCode and continuously work on improving my technical and analytical skills."
     },
 
     experiences: [
