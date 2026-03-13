@@ -27,7 +27,7 @@ export const config = {
             period: "Apr 2023 - Present",
             location: "Punjab, India",
             description:
-                "Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 7.28.",
+                "Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 7.51.",
             responsibilities: [
                 "Studying core subjects including Data Structures, Algorithms, OOPS, and Web Development.",
                 "Building real-world projects involving Machine Learning and Full-Stack Development.",
@@ -39,10 +39,10 @@ export const config = {
         {
             position: "Intermediate (Higher Secondary)",
             company: "Shri Sai Baba School",
-            period: "Apr 2020 - Mar 2021",
+            period: "Apr 2021 - Mar 2022",
             location: "Chhattisgarh, India",
             description:
-                "Completed higher secondary education with 79.2% in the Science stream.",
+                "Completed higher secondary education with 81.2% in the Science stream.",
             responsibilities: [
                 "Focused on Mathematics and Science subjects.",
                 "Participated in academic competitions and school technical activities."
@@ -53,7 +53,7 @@ export const config = {
         {
             position: "Matriculation (Secondary School)",
             company: "Shri Sai Baba School",
-            period: "Apr 2018 - Mar 2019",
+            period: "Apr 2019 - Mar 2020",
             location: "Chhattisgarh, India",
             description:
                 "Completed secondary education with 71%.",
