@@ -497,13 +497,12 @@ h2.landing-info-h2 {
     left: auto;
     right: 66%;
     transform: translate(0%, -50%);
-    z-index: 20;
   }
 
   .landing-info {
     bottom: auto;
     top: 51%;
-    z-index: 20;
+    z-index: inherit;
     text-align: left;
     transform: translate(0%, -50%);
     right: auto;
@@ -517,13 +516,12 @@ h2.landing-info-h2 {
     left: auto;
     right: 70%;
     transform: translate(0%, -50%);
-    z-index: 20;
   }
 
   .landing-info {
     bottom: auto;
     top: 51%;
-    z-index: 20;
+    z-index: inherit;
     text-align: left;
     transform: translate(0%, -50%);
     right: auto;
@@ -561,61 +559,38 @@ h2.landing-info-h2 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 15px; /* Added gap to separate buttons */
 }
 
 .cv-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 12px 24px;
+  gap: 12px;
+  padding: 14px 28px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50px;
   color: #fff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-.view-cv-btn {
-  background: rgba(194, 164, 255, 0.15);
-  border: 1px solid rgba(194, 164, 255, 0.4);
-}
-
-.download-cv-btn {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
 .cv-btn svg {
   transition: transform 0.3s ease;
-  width: 20px;
-  height: 20px;
 }
 
 .cv-btn:hover {
+  background: rgba(194, 164, 255, 0.1);
+  border-color: rgba(194, 164, 255, 0.5);
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(194, 164, 255, 0.2);
 }
 
-.view-cv-btn:hover {
-  background: rgba(194, 164, 255, 0.25);
-  border-color: rgba(194, 164, 255, 0.6);
-}
-
-.download-cv-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.3);
-}
-
-.view-cv-btn:hover svg {
-  transform: scale(1.1);
-}
-
-.download-cv-btn:hover svg {
+.cv-btn:hover svg {
   transform: translateY(3px);
 }
 
@@ -624,12 +599,5 @@ h2.landing-info-h2 {
     margin-top: 20px;
     justify-content: center;
     width: 100%;
-    flex-direction: row; /* Keep row instead of stacking */
-    flex-wrap: wrap; /* Allow wrapping if too tight */
-  }
-  
-  .cv-btn {
-    padding: 10px 20px;
-    font-size: 14px;
   }
 }

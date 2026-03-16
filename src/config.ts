@@ -19,6 +19,29 @@ export const config = {
             "I am a B.Tech Computer Science and Engineering student at Lovely Professional University. My interests include Data Science, Machine Learning, and Full-Stack Development. I enjoy building automation tools, developing end-to-end web applications using Django, and solving complex algorithmic challenges. I have solved 200+ problems on LeetCode and continuously work on improving my technical and analytical skills."
     },
 
+    cvLink: "/Roshan_Resume.pdf",
+
+    certifications: [
+        {
+            title: "Cloud Computing Certification",
+            provider: "NPTEL",
+            date: "September 2025",
+            icon: "https://img.icons8.com/color/48/certificate.png"
+        },
+        {
+            title: "Python Django Development",
+            provider: "CipherSchool",
+            date: "June 2025",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+        },
+        {
+            title: "Data Structures & Algorithms Using C++",
+            provider: "CipherSchool",
+            date: "August 2024",
+            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+        }
+    ],
+
     experiences: [
 
         {
@@ -77,27 +100,6 @@ export const config = {
                 "Enhanced model accuracy through hyperparameter tuning, feature engineering, and model optimization."
             ],
             technologies: ["Python", "Machine Learning", "Predictive Analytics", "Data Preprocessing"]
-        },
-
-        {
-            position: "Certifications & Achievements",
-            company: "Various Platforms",
-            period: "2024 - 2025",
-            location: "Online",
-            description:
-                "Earned certifications in Cloud Computing (NPTEL), Python Django Development (CipherSchool), and Data Structures & Algorithms using C++ (CipherSchool), demonstrating continuous learning and skill development in software and data technologies.",
-            responsibilities: [
-                "Cloud Computing Certification — September 2025",
-                "Python Django Development Certification — CipherSchool — June 2025",
-                "Data Structures & Algorithms Using C++ Certification — August 2024",
-                "Solved 150+ problems on LeetCode across arrays, trees, graphs, and dynamic programming."
-            ],
-            technologies: [
-                "Cloud Computing",
-                "Python Django Development",
-                "Data Structures & Algorithms (C++)",
-                "LeetCode"
-            ]
         }
     ],
 

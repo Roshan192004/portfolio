@@ -63,18 +63,15 @@ const TechStackNew = () => {
           {techStack.map((row, rowIndex) => (
             <div key={rowIndex} className="techstack-row">
               {row.map((tech, techIndex) => (
-                <a
+                <div
                   key={techIndex}
-                  href={tech.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
                   className="techstack-item"
                   title={tech.name}
                   data-cursor="disable"
                 >
                   <img src={tech.icon} alt={tech.name} />
                   <span>{tech.name}</span>
-                </a>
+                </div>
               ))}
             </div>
           ))}
