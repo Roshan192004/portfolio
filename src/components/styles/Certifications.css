@@ -1,10 +1,11 @@
+/* ===================== SECTION ===================== */
 .certifications-section {
   width: 100%;
-  padding: 100px 20px;
-  background-color: #0b080c; /* Matches typical bg */
+  padding: 100px 20px 80px;
+  background-color: #0b080c;
   position: relative;
   z-index: 2;
-  border-top: 1px solid rgba(255, 255, 255, 0.05); /* Optional Separator */
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .certifications-container {
@@ -18,164 +19,304 @@
   text-transform: uppercase;
   margin-bottom: 60px;
   color: #fff;
-  text-align: center;
 }
 
 .certifications-container h2 span {
-  color: #c2a4ff; /* Accent glow color */
+  color: #c2a4ff;
   font-family: var(--fontStack2, "Playfair Display", serif);
   font-style: italic;
 }
 
-.certifications-grid {
+/* ===================== GRID ===================== */
+.cert-img-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
-.certification-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+/* ===================== CARD ===================== */
+.cert-img-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 16px;
-  padding: 30px;
-  transition: all 0.4s ease;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.35s ease, border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.cert-img-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(194, 164, 255, 0.4);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(194, 164, 255, 0.12);
+}
+
+/* ===================== THUMBNAIL ===================== */
+.cert-img-thumb {
+  width: 100%;
+  height: 200px;
   position: relative;
   overflow: hidden;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  height: 250px;
+  background: #fff;
 }
 
-.certification-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+/* Scale-down PDF embed to show first page as thumbnail */
+.cert-pdf-thumb-wrap {
   width: 100%;
   height: 100%;
-  background: linear-gradient(145deg, rgba(194, 164, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  z-index: 0;
-}
-
-.certification-card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(194, 164, 255, 0.3);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3), 0 0 20px rgba(194, 164, 255, 0.1);
-  background: rgba(255, 255, 255, 0.04);
-}
-
-.certification-card:hover::before {
-  opacity: 1;
-}
-
-.cert-content {
   position: relative;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  overflow: hidden;
+  pointer-events: none; /* prevent interaction on thumbnail */
+  user-select: none;
 }
 
-.cert-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 25px;
+.cert-pdf-thumb-embed {
+  width: 300%;
+  height: 300%;
+  border: none;
+  transform: scale(0.333);
+  transform-origin: top left;
+  pointer-events: none;
+  display: block;
 }
 
-.cert-icon {
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
+.cert-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 5, 20, 0.65);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  backdrop-filter: blur(2px);
 }
 
-.cert-icon img {
+.cert-img-card:hover .cert-img-overlay {
+  opacity: 1;
+}
+
+.cert-view-icon {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  background: rgba(194, 164, 255, 0.25);
+  border: 1px solid rgba(194, 164, 255, 0.5);
+  padding: 10px 22px;
+  border-radius: 40px;
+  letter-spacing: 0.5px;
+  transition: background 0.2s ease;
+}
+
+.cert-img-card:hover .cert-view-icon {
+  background: rgba(194, 164, 255, 0.4);
+}
+
+/* ===================== CARD INFO ===================== */
+.cert-img-info {
+  padding: 20px 22px;
+}
+
+.cert-img-info h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+.cert-img-provider {
+  font-size: 13px;
+  color: #c2a4ff;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* ===================== VIEW ALL BUTTON ===================== */
+.cert-view-all-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+}
+
+.cert-view-all-btn {
+  background: rgba(194, 164, 255, 0.15);
+  color: #c2a4ff;
+  border: 1px solid rgba(194, 164, 255, 0.35);
+  padding: 13px 30px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cert-view-all-btn:hover {
+  background: rgba(194, 164, 255, 0.28);
+  border-color: rgba(194, 164, 255, 0.7);
+  box-shadow: 0 0 18px rgba(194, 164, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ===================== MODAL OVERLAY ===================== */
+.cert-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: fadeInOverlay 0.25s ease;
+}
+
+@keyframes fadeInOverlay {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ===================== MODAL PANEL ===================== */
+.cert-modal {
+  background: #130f1e;
+  border: 1px solid rgba(194, 164, 255, 0.2);
+  border-radius: 20px;
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  animation: slideUpModal 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 40px rgba(194, 164, 255, 0.08);
+}
+
+@keyframes slideUpModal {
+  from { opacity: 0; transform: translateY(30px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* ===================== MODAL CLOSE ===================== */
+.cert-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.cert-modal-close:hover {
+  background: rgba(194, 164, 255, 0.2);
+  border-color: rgba(194, 164, 255, 0.5);
+}
+
+/* ===================== MODAL PDF VIEW ===================== */
+.cert-modal-body {
+  flex: 1;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.cert-modal-pdf {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+  min-height: 500px;
+  border: none;
+  display: block;
 }
 
-.leetcode-icon img {
-  width: 80%;
-  height: 80%;
-}
-
-.cert-date {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.05);
-  padding: 5px 12px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.cert-content h3 {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 10px;
-  color: #fff;
-  line-height: 1.4;
-  flex-grow: 1;
-}
-
-.cert-provider {
-  font-size: 14px;
-  color: #c2a4ff;
-  margin-top: auto;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.achievement-card {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, rgba(194, 164, 255, 0.05) 100%);
-  border-color: rgba(194, 164, 255, 0.15);
-}
-
-.cert-tags {
+/* ===================== MODAL FOOTER ===================== */
+.cert-modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
+  align-items: center;
+  gap: 12px;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 15px;
 }
 
-.cert-tags span {
-  font-size: 11px;
+.cert-modal-footer h3 {
+  font-size: 15px;
+  font-weight: 500;
   color: #fff;
-  background: rgba(194, 164, 255, 0.15);
-  padding: 4px 10px;
-  border-radius: 6px;
-  border: 1px solid rgba(194, 164, 255, 0.2);
+  flex: 1;
 }
 
+.cert-modal-footer span {
+  font-size: 13px;
+  color: #c2a4ff;
+}
+
+.cert-modal-download {
+  font-size: 13px;
+  color: #c2a4ff;
+  text-decoration: none;
+  border: 1px solid rgba(194, 164, 255, 0.3);
+  padding: 7px 16px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.cert-modal-download:hover {
+  background: rgba(194, 164, 255, 0.15);
+  border-color: rgba(194, 164, 255, 0.6);
+}
+
+/* ===================== RESPONSIVE ===================== */
 @media screen and (max-width: 900px) {
   .certifications-container h2 {
     font-size: 50px;
     margin-bottom: 40px;
   }
+  .cert-img-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {
   .certifications-section {
-    padding: 60px 15px;
+    padding: 60px 15px 50px;
   }
-  
+
   .certifications-container h2 {
     font-size: 36px;
     margin-bottom: 30px;
   }
-  
-  .certification-card {
-    padding: 25px;
-    height: 230px;
+
+  .cert-img-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-img-thumb {
+    height: 180px;
+  }
+
+  .cert-modal {
+    width: 100%;
+    max-height: 95vh;
+  }
+
+  .cert-modal-body {
+    min-height: 350px;
+  }
+
+  .cert-modal-pdf {
+    min-height: 350px;
   }
 }

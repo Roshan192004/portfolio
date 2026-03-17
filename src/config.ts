@@ -23,22 +23,46 @@ export const config = {
 
     certifications: [
         {
-            title: "Cloud Computing Certification",
+            title: "Cloud Computing",
             provider: "NPTEL",
             date: "September 2025",
-            icon: "https://img.icons8.com/color/48/certificate.png"
+            image: "/images/cert_cloud.png",
+            pdf: "/pdfs/Cloud Computing.pdf"
         },
         {
-            title: "Python Django Development",
-            provider: "CipherSchool",
-            date: "June 2025",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+            title: "Computational Theory: Language Principle & Finite Automata Theory",
+            provider: "Infosys",
+            date: "2024",
+            image: "/images/cert_computational.png",
+            pdf: "/pdfs/Computational Theory.pdf"
         },
         {
-            title: "Data Structures & Algorithms Using C++",
-            provider: "CipherSchool",
+            title: "Free Code Camp Full Stack Web Development",
+            provider: "FreeCodeCamp",
+            date: "2024",
+            image: "/images/cert_fcc.png",
+            pdf: "/pdfs/freecodecamp.pdf"
+        },
+        {
+            title: "DSA with C++ : Data Structures and Algorithms",
+            provider: "CipherSchools",
             date: "August 2024",
-            icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+            image: "/images/cert_dsa.png",
+            pdf: "/pdfs/DSA.pdf"
+        },
+        {
+            title: "Packet Switching Networks and Algorithms",
+            provider: "Coursera",
+            date: "2024",
+            image: "/images/cert_networking.png",
+            pdf: "/pdfs/Networking.pdf"
+        },
+        {
+            title: "Python Django Development Certificate",
+            provider: "CipherSchools",
+            date: "June 2025",
+            image: "/images/cert_python.png",
+            pdf: "/pdfs/Python Development.pdf"
         }
     ],
 
@@ -50,7 +74,7 @@ export const config = {
             period: "Apr 2023 - Present",
             location: "Punjab, India",
             description:
-                "Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 7.51.",
+                "Currently pursuing B.Tech in Computer Science and Engineering with a CGPA of 7.46.",
             responsibilities: [
                 "Studying core subjects including Data Structures, Algorithms, OOPS, and Web Development.",
                 "Building real-world projects involving Machine Learning and Full-Stack Development.",
@@ -65,7 +89,7 @@ export const config = {
             period: "Apr 2021 - Mar 2022",
             location: "Chhattisgarh, India",
             description:
-                "Completed higher secondary education with 81.2% in the Science stream.",
+                "Completed higher secondary education with 79.2% in the Science stream.",
             responsibilities: [
                 "Focused on Mathematics and Science subjects.",
                 "Participated in academic competitions and school technical activities."
