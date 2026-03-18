@@ -312,3 +312,39 @@
     min-height: 350px;
   }
 }
+
+/* ===================== PDF FALLBACK ===================== */
+.cert-pdf-fallback {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  background: #1a1625;
+}
+
+.cert-pdf-fallback p {
+  font-size: 16px;
+  margin-bottom: 24px;
+  opacity: 0.8;
+}
+
+.cert-modal-download-link {
+  background: #c2a4ff;
+  color: #0b080c;
+  padding: 12px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(194, 164, 255, 0.2);
+}
+
+.cert-modal-download-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(194, 164, 255, 0.3);
+  background: #d4c0ff;
+}

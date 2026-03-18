@@ -102,11 +102,23 @@ const Certifications = () => {
               ✕
             </button>
             <div className="cert-modal-body">
-              <iframe
-                src={selectedCert.pdf}
-                title={selectedCert.title}
+              <object
+                data={selectedCert.pdf}
+                type="application/pdf"
                 className="cert-modal-pdf"
-              />
+              >
+                <div className="cert-pdf-fallback">
+                  <p>It looks like your browser cannot display this PDF directly.</p>
+                  <a
+                    href={selectedCert.pdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cert-modal-download-link"
+                  >
+                    Click here to view or download the certificate ↗
+                  </a>
+                </div>
+              </object>
             </div>
             <div className="cert-modal-footer">
               <h3>{selectedCert.title}</h3>
