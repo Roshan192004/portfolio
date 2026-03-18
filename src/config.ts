@@ -27,14 +27,14 @@ export const config = {
             provider: "NPTEL",
             date: "September 2025",
             image: "/images/cert_cloud.png",
-            pdf: "/pdfs/Cloud Computing.pdf"
+            pdf: "/pdfs/Cloud_Computing.pdf"
         },
         {
             title: "Computational Theory: Language Principle & Finite Automata Theory",
             provider: "Infosys",
             date: "2024",
             image: "/images/cert_computational.png",
-            pdf: "/pdfs/Computational Theory.pdf"
+            pdf: "/pdfs/Computational_Theory.pdf"
         },
         {
             title: "Free Code Camp Full Stack Web Development",
@@ -62,7 +62,7 @@ export const config = {
             provider: "CipherSchools",
             date: "June 2025",
             image: "/images/cert_python.png",
-            pdf: "/pdfs/Python Development.pdf"
+            pdf: "/pdfs/Python_Development.pdf"
         }
     ],
 

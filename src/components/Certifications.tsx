@@ -62,13 +62,11 @@ const Certifications = () => {
             >
               {/* PDF thumbnail: scaled-down embed */}
               <div className="cert-img-thumb">
-                <div className="cert-pdf-thumb-wrap">
-                  <embed
-                    src={`${cert.pdf}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
-                    type="application/pdf"
-                    className="cert-pdf-thumb-embed"
-                  />
-                </div>
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="cert-img-thumb-img"
+                />
                 <div className="cert-img-overlay">
                   <span className="cert-view-icon">🔍 View</span>
                 </div>

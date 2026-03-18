@@ -56,28 +56,20 @@
   width: 100%;
   height: 200px;
   position: relative;
-  overflow: hidden;
-  background: #fff;
+  background: #1a1625;
 }
 
-/* Scale-down PDF embed to show first page as thumbnail */
-.cert-pdf-thumb-wrap {
+/* New image-based thumbnail */
+.cert-img-thumb-img {
   width: 100%;
   height: 100%;
-  position: relative;
-  overflow: hidden;
-  pointer-events: none; /* prevent interaction on thumbnail */
-  user-select: none;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
 }
 
-.cert-pdf-thumb-embed {
-  width: 300%;
-  height: 300%;
-  border: none;
-  transform: scale(0.333);
-  transform-origin: top left;
-  pointer-events: none;
-  display: block;
+.cert-img-card:hover .cert-img-thumb-img {
+  transform: scale(1.05);
 }
 
 .cert-img-overlay {
